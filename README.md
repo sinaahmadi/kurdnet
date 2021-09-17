@@ -44,13 +44,17 @@ The following table shows the main statistical properties of Base Concepts and i
   </tr>
 </table>
 
+Folder [ckb](ckb) contains OMW compatible files of KurdNet. Unlike definitions in Sorani Kurdish which are translated manually by experts, lemmata are collected semi-automatically. Therefore, it is possible to find incorrect cases in the provided lemmata. This is something that should be more focused on in the next version of the resource. According the our experiments, the semi-automatic minimal alignment (referred to as **min**) outperforms the maximal alignment (max). Therefore, only lemmata which are semi-automatically aligned based on the min technique are provided in the Open Multilingual WordNet version.
+
 ## Contribute to this project ✨
 
 The current version of KurdNet only contains synsets and translations in Sorani. Since 2014 when we initiated this project, we have been looking for people interested in translating the current definitions and synsets into other variants of Kurdish, particularly Kurmanji. If you can contribute to this project, please get in touch. You can take a look at the glosses to be translated in the [Translated_Glosses.tsv](Translated_Glosses.tsv) file.
 
+**Note** that the .tsv files are exported based on the original Excel files and some of them are cleaned, e.g. ZWNJ removed. It is recommended to work on the .tsv files for future developments.
+
 ## Cite this project
 
-If you use this resource, please cite our [publication](https://www.aclweb.org/anthology/W14-0101):
+If you use this resource, please cite our [paper](https://www.aclweb.org/anthology/W14-0101):
 
 	@inproceedings{W14-0101,
 	  title = "Towards Building KurdNet, the Kurdish WordNet",
