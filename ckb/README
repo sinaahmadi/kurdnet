@@ -1,0 +1,32 @@
+Mappings from TALP
+
+conversion to lmf using the script in https://github.com/bond-lab/omw-data
+
+I am not sure which version number to use!
+
+python3 ~/git/omw-data/scripts/tsv2lmf.py ckbwn ckb \
+        ~/git/omw-data/scripts/ili-map.tab wn-data-ckb.tab \
+	--version="1.0" --citation=citation.rst > ckbwn.xml
+
+xmlstarlet validate -e --dtd ~/git/omw-data/scripts/WN-LMF.dtd ckbwn.xml
+
+And now it can be used with the Python wn module:
+https://pypi.org/project/wn/
+
+>>> import wn
+
+>>> wn.add("ckbwn.xml")
+
+>>> wn.synsets("وته")
+[Synset('ckbwn-06286395-n')]
+
+>>> wn.synsets("وته")[0].definition()
+'یەکەیەکی زمان کە وتەبێژەکانی هەر زمانێک دەیناسێنەوە'
+
+>>> wn.synsets("وته")[0].ili
+'i69544'
+
+>>> wn.senses("وته")[0].translate(lexicon="pwn:3.0")[0].word().lemma()
+'word'
+
+(assuming you have already loaded Princeton Wordnet 3.0)
