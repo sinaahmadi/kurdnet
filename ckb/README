@@ -4,7 +4,7 @@ conversion to lmf using the script in https://github.com/bond-lab/omw-data
 
 I am not sure which version number to use!
 
-python3 ~/git/omw-data/scripts/tsv2lmf.py ckbwn ku \
+python3 ~/git/omw-data/scripts/tsv2lmf.py ckbwn ckb \
         ~/git/omw-data/scripts/ili-map.tab wn-data-ckb.tab \
 	--version="1.0" --citation=citation.rst > ckbwn.xml
 
