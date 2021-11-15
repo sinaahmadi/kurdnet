@@ -54,4 +54,4 @@ xmlstarlet val -d etc/"$DTD" "$DESTINATION"
 
 # archive the package
 echo "Archiving the package"
-tar --checkpoint=.10 -c -J -f "${NAME}.tar.xz" "$DIR"
+tar -c -J -f "${NAME}.tar.xz" "$DIR"
