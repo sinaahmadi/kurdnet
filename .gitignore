@@ -33,3 +33,7 @@ Temporary Items
 
 # End of https://www.toptal.com/developers/gitignore/api/macos
 
+# Temporary files for building the wordnet
+etc/
+kurdnet-*
+build.log
